@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('master');
+});
+
+Auth::routes();
+
+// Admin route
+// Route::get('/admin-home', [App\Http\Controllers\HomeController::class, 'index'])->name('admin-home');
+
+// All Backend Routes Here
+Route::middleware('auth')->group(function () {
+
+    // Admin Dashboard Route
+    Route::get('/admin-home', [DashboardController::class, 'index'])->name('admin-home');
+
 });
