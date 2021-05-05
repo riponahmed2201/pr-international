@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\TeamMemberController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,4 +30,13 @@ Route::middleware('auth')->group(function () {
     // Admin Dashboard Route
     Route::get('/admin-home', [DashboardController::class, 'index'])->name('admin-home');
 
+    //Team Member Routes
+    Route::group(['prefix' => 'team-member'], function () {
+        Route::get('/index', [TeamMemberController::class, 'index'])->name('teamMember.index');
+        Route::get('/create', [TeamMemberController::class, 'create'])->name('teamMember.create');
+        Route::post('/store', [TeamMemberController::class, 'store'])->name('teamMember.store');
+        Route::get('/edit/{id}', [TeamMemberController::class, 'edit'])->name('teamMember.edit');
+        Route::post('/update/{id}', [TeamMemberController::class, 'update'])->name('teamMember.update');
+        Route::get('/delete/{id}', [TeamMemberController::class, 'delete'])->name('teamMember.delete');
+    });
 });
