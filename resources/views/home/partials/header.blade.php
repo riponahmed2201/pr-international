@@ -62,18 +62,22 @@
                         </div>
                     </div>
                     <div id="sidebar">
-                        <h1><a href="#">Bit Money</a></h1>
+                        <h1>
+                            <a href="{{ url('/') }}">
+                                <img style="width: 241px; height:66px" src="{{ asset('assets/backend/logo/PR.png') }}" alt="">
+                                  {{-- <img src="{{ asset('assets/frontend/images/logo/logo.png') }}" alt="logo"> --}}
+                            </a>
+                        </h1>
                         <div id="toggle_close">&times;</div>
                         <div id='cssmenu' class="wd_single_index_menu">
                             <ul>
                                 <li><a href="0">Home</a></li>
-                                <li><a href="1">About</a></li>
-                                <li><a href="2">Features</a></li>
-                                <li><a href="3">Project</a></li>
-                                <li><a href="4">Steps</a></li>
-                                <li><a href="5">Road Map</a></li>
-                                <li><a href="6">Tokens</a></li>
-                                <li><a href="7">News</a></li>
+                                <li><a href="1">Who we are</a></li>
+                                <li><a href="2">What we do</a></li>
+                                <li><a href="3">Defense</a></li>
+                                <li><a href="4">Civil</a></li>
+                                <li><a href="5">Contact</a></li>
+                                <li><a href="7">Projects</a></li>
                             </ul>
                         </div>
                     </div>
