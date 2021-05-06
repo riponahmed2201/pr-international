@@ -352,37 +352,44 @@
                             </h2>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <div class="card">
+                       <div class="card-body">
+                           <div class="col-lg-3 col-md-3"></div>
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
                             <figure>
                                 <img src="{{ asset('assets/frontend/images/core_team_1.png')}}" alt="">
                             </figure>
+                            <br>
                             <div class="content">
                                 <strong> Mr. Hasan Mahmud </strong>
                                 <h4>Proprietor</h4>
                                 <h6>P.R. International</h6>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
                             <figure>
                                 <img src="{{ asset('assets/frontend/images/core_team_2.png')}}" alt="">
                             </figure>
+                            <br>
                             <div class="content">
                                 <strong> Saeed Ur Rashid </strong>
                                 <h4>CEO</h4>
                                 <h6>P.R. International</h6>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
                             <figure>
                                 <img src="{{ asset('assets/frontend/images/core_team_3.png')}}" alt="">
                             </figure>
+                            <br>
                             <div class="content">
                                 <strong> Abdullah Al Hasib </strong>
                                 <h4>Manager</h4>
                                 <h6>P.R. International</h6>
                             </div>
                         </div>
+                        <div class="col-lg-3 col-md-3"></div>
+                       </div>
                     </div>
                 </div>
             </div>

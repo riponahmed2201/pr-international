@@ -24,11 +24,11 @@
                         </ul>
                     </nav>
                     <div class="language">
-                        <span class="lng-in"><img src="{{ asset('assets/frontend/images/icons/12.png') }}" alt=""></span>
-                        <ul class="lng-out">
+                        <span class="lng-in"><img style="width: 23px; height:23px" src="{{ asset('assets/frontend/images/bangladesh.png') }}" alt=""></span>
+                        {{-- <ul class="lng-out">
                             <li><img src="{{ asset('assets/frontend/images/icons/12.png') }}" alt=""></li>
                             <li><img src="{{ asset('assets/frontend/images/icons/12.png') }}" alt=""></li>
-                        </ul>
+                        </ul> --}}
                     </div>
                     {{-- <div class="login-btn">
                         <a href="#" class="btn1"><i class="fa fa-user"></i><span>Login</span></a>
