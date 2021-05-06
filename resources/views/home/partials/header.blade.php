@@ -17,23 +17,22 @@
                             <li><a href="0">Home</a></li>
                             <li><a href="1">Who we are</a></li>
                             <li><a href="2">What we do</a></li>
-                            <li><a href="3">Project</a></li>
-                            <li><a href="4">Steps</a></li>
-                            <li><a href="5">Road Map</a></li>
-                            <li><a href="6">Tokens</a></li>
-                            <li><a href="7">Programs & Projects</a></li>
+                            <li><a href="3">Defense</a></li>
+                            <li><a href="4">Civil</a></li>
+                            <li><a href="5">Contact</a></li>
+                            <li><a href="7">Projects</a></li>
                         </ul>
                     </nav>
                     <div class="language">
-                        <span class="lng-in"><img src="images/icons/12.png" alt=""></span>
+                        <span class="lng-in"><img src="{{ asset('assets/frontend/images/icons/12.png') }}" alt=""></span>
                         <ul class="lng-out">
                             <li><img src="{{ asset('assets/frontend/images/icons/12.png') }}" alt=""></li>
                             <li><img src="{{ asset('assets/frontend/images/icons/12.png') }}" alt=""></li>
                         </ul>
                     </div>
-                    <div class="login-btn">
+                    {{-- <div class="login-btn">
                         <a href="#" class="btn1"><i class="fa fa-user"></i><span>Login</span></a>
-                    </div>
+                    </div> --}}
                 </div>
                 <!-- mobile menu area start -->
                 <div class="rp_mobail_menu_main_wrapper visible-xs">
