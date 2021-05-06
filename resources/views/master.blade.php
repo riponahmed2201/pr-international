@@ -3,37 +3,10 @@
 <html class="no-js" lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Bit Money Html Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-    <!-- all css here -->
-    <!-- bootstrap v3.3.6 css -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/bootstrap.min.css') }}">
-    <!-- animate css -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/animate.css') }}">
-    <!-- jquery-ui.min css -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/jquery-ui.min.css') }}">
-    <!-- meanmenu css -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/meanmenu.min.css') }}">
-    <!-- owl.carousel css -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/owl.carousel.min.css') }}">
-    <!-- bxslider css -->
-    <!--flaticon css -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/flaticon.css') }}">
-    <!-- font-awesome css -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/font-awesome.min.css') }}">
-    <link href="{{ asset('assets/frontend/css/video-js.css') }}" rel="stylesheet">
-    <!-- style css -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/style.css') }}">
-    <!-- responsive css -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/ss/responsive.css') }}">
-    <!-- modernizr css -->
-    <script src="{{ asset('assets/frontend/js/vendor/modernizr-2.8.3.min.js') }}"></script>
-<script src='../../../google_analytics_auto.js'></script></head>
+
+    @include('home.partials.stylesheet')
+
+</head>
 
 <body>
     <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
@@ -44,97 +17,16 @@
     </div>
     <!--Header area start here-->
     <div section-scroll='0' class="wd_scroll_wrap">
-        <header class="gc_main_menu_wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-6">
-                        <div class="logo-area">
-                            <a href="index.html"><img src="{{ asset('assets/frontend/images/logo/logo.png') }}" alt="logo"></a>
-                        </div>
-                    </div>
-                    <!-- Mobile Menu  Start -->
-                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-6">
-                        <div class="menu-area  hidden-xs">
-                            <nav class="wd_single_index_menu btc_main_menu">
-                                <ul>
-                                    <li><a href="0">Home</a></li>
-                                    <li><a href="1">About</a></li>
-                                    <li><a href="2">Features</a></li>
-                                    <li><a href="3">Project</a></li>
-                                    <li><a href="4">Steps</a></li>
-                                    <li><a href="5">Road Map</a></li>
-                                    <li><a href="6">Tokens</a></li>
-                                    <li><a href="7">News</a></li>
-                                </ul>
-                            </nav>
-                            <div class="language">
-                                <span class="lng-in"><img src="images/icons/12.png" alt=""></span>
-                                <ul class="lng-out">
-                                    <li><img src="images/icons/12.png" alt=""></li>
-                                    <li><img src="images/icons/12.png" alt=""></li>
-                                </ul>
-                            </div>
-                            <div class="login-btn">
-                                <a href="#" class="btn1"><i class="fa fa-user"></i><span>Login</span></a>
-                            </div>
-                        </div>
-                        <!-- mobile menu area start -->
-                        <div class="rp_mobail_menu_main_wrapper visible-xs">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div id="toggle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewbox="0 0 31.177 31.177" style="enable-background:new 0 0 31.177 31.177;" xml:space="preserve" width="25px" height="25px">
-                                            <g>
-                                                <g>
-                                                    <path class="menubar" d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z" fill="#fff"></path>
-                                                </g>
-                                                <g>
-                                                    <path class="menubar" d="M30.23,9.126H12.069c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,8.729,30.72,9.126,30.23,9.126z" fill="#fff"></path>
-                                                </g>
-                                                <g>
-                                                    <path class="menubar" d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z" fill="#fff"></path>
-                                                </g>
-                                                <g>
-                                                    <path class="menubar" d="M30.23,23.826H12.069c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,23.43,30.72,23.826,30.23,23.826z" fill="#fff"></path>
-                                                </g>
-                                                <g>
-                                                    <path class="menubar" d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z" fill="#fff"></path>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="sidebar">
-                                <h1><a href="#">Bit Money</a></h1>
-                                <div id="toggle_close">&times;</div>
-                                <div id='cssmenu' class="wd_single_index_menu">
-                                    <ul>
-                                        <li><a href="0">Home</a></li>
-                                        <li><a href="1">About</a></li>
-                                        <li><a href="2">Features</a></li>
-                                        <li><a href="3">Project</a></li>
-                                        <li><a href="4">Steps</a></li>
-                                        <li><a href="5">Road Map</a></li>
-                                        <li><a href="6">Tokens</a></li>
-                                        <li><a href="7">News</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Mobile Menu  End -->
-                    </div>
-                </div>
-            </div>
-        </header>
+
+        @include('home.partials.header')
         <!--Header area end here-->
         <!--Slider area start here-->
         <section class="slider-area">
             <canvas>
-                <script src="js/three.js"></script>
-                <script src="js/stats.min.js"></script>
-                <script src="js/Projector.js"></script>
-                <script src="js/CanvasRenderer.js"></script>
+                <script src="{{ asset('assets/frontend/js/three.js') }}"></script>
+                <script src="{{ asset('assets/frontend/js/stats.min.js') }}"></script>
+                <script src="{{ asset('assets/frontend/js/Projector.js') }}"></script>
+                <script src="{{ asset('assets/frontend/js/CanvasRenderer.js') }}"></script>
             </canvas>
             <div id="particles-js">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -298,10 +190,21 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="about-content">
-                            <h2 class="f-40 fw-400 wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">About The Project</h2>
-                            <p class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">Bit Money is a lending and investment, multicurrency and multifunctional online platform based on blockchain technology. There investors and borrowers meet each other and have the opportunity to lend money on mutually beneficial.</p>
-                            <p class="wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">Bit Money is a unique service that allows individuals to access loans from the comfort of their home in fiat currencies or crypto-currencies.</p>
-                            <p class="wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">Bit Money is a multi-functional platform which allows each participant to keep money in a multi-currency online wallet, buy and sell currency on the exchange, invest money, get a loan in a convenient currency.</p>
+                            <h2 class="f-40 fw-400 wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Who we are?</h2>
+                            <p class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                We P.R. International a Bangladesh
+                                based defence product supplier
+                                company registered and exclusively
+                                approved by Directorate General of
+                                Defence Purchase (DGDP) under the
+                                Ministry of Defence (MoD).
+
+                                We are working with DGDP from
+                                2003 and successfully deliver our
+                                services. We serve all kinds of arms,
+                                ammunition & aeroplane spare parts
+                                for Bangladesh Defence.
+                            </p>
                             <div class="buttons">
                                 <a href="#" class="btn1">WHITEPAPER</a>
                                 <a href="#" class="btn3">Buy Tokens Now!</a>
@@ -310,14 +213,73 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="about-img wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                            <img src="images/about/1.png" alt="">
+                            <img src="{{ asset('assets/frontend/images/about/1.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <h6 class="f-40 fw-400 wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                    The best the market can offer
+                </h6>
+                <h2>We Serve</h2>
+                <div class="row">
+                    <div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <div class="about-content">
+                                <img src="{{ asset('assets/frontend/images/about/1.png') }}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <p class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                We offer military grade
+                                hand guns, Assault rifles,
+                                Sniper rifles, Guided anti
+                                tank missile & Mortar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <div class="about-content">
+                                <img src="{{ asset('assets/frontend/images/about/1.png') }}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <p class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                We serve top quality live
+                                ammunition. The list
+                                consist of .22LR, 9 mm,
+                                .45 Acp, 7.62x39/51 mm,
+                                Mortar shell.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <div class="about-content">
+                                <img src="{{ asset('assets/frontend/images/about/1.png') }}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <p class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                We provide support for
+                                spare parts of AW
+                                119/139, Bell 206/212,
+                                MI17 Helicopter & C130
+                                J/B Hercules aircraft.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--About area end here-->
-        <div class="sud">
+        {{-- <div class="sud">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
                 <style type="text/css">
                     .st0 {
@@ -334,8 +296,77 @@
                      c15.3,22.7,51,22.7,53,23v28.1H0V80z"></path>
                 </g>
             </svg>
-        </div>
+        </div> --}}
     </div>
+
+    <div section-scroll='3' class="wd_scroll_wrap">
+        <section class="projects bg-img pd-t100 pd-b70 jarallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <div class="section-heading">
+                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                                The best the market can
+                                offer
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="images/icons/6.png" alt=""></span>
+                                <h3>Blockchain <br>Technology</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="images/icons/7.png" alt=""></span>
+                                <h3>Advanced <br>Security System</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="images/icons/8.png" alt=""></span>
+                                <h3>Multicurrency <br>Coins</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="images/icons/9.png" alt=""></span>
+                                <h3>Internal <br>Exchange</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="images/icons/10.png" alt=""></span>
+                                <h3>Safety <br>Fund</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="images/icons/11.png" alt=""></span>
+                                <h3>Cooperation <br>With Arbitration</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
     <div section-scroll='2' class="wd_scroll_wrap">
         <section class="features-area section">
             <div id="features-js">
@@ -343,7 +374,9 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="section-heading2 wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                                <h2>Our Features</h2>
+                                <p>The best the market can
+                                                offer</p>
+                                <h2>We Serve</h2>
                             </div>
                         </div>
                     </div>
@@ -645,7 +678,7 @@
                                                 <div class="box-con">
                                                     <div class="dbox">
                                                         <div class="dleft">
-                                                            <div class="imgs"><img src="images/video/2.png" alt=""></div>
+                                                            <div class="imgs"><img src="{{ asset('assets/frontend/images/video/2.png')}}" alt=""></div>
                                                         </div>
                                                         <div class="dright">
                                                             <div class="content">
@@ -666,7 +699,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="dright">
-                                                            <div class="imgs"><img src="images/video/3.png" alt=""></div>
+                                                            <div class="imgs"><img src="{{ asset('assets/frontend/images/video/3.png')}}" alt=""></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -681,7 +714,7 @@
                                                 <div class="box-con">
                                                     <div class="dbox">
                                                         <div class="dleft">
-                                                            <div class="imgs"><img src="images/video/3.png" alt=""></div>
+                                                            <div class="imgs"><img src="{{ asset('assets/frontend/images/video/3.png')}}" alt=""></div>
                                                         </div>
                                                         <div class="dright">
                                                             <div class="content">
@@ -702,7 +735,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="dright">
-                                                            <div class="imgs"><img src="images/video/4.png" alt=""></div>
+                                                            <div class="imgs"><img src="{{ asset('assets/frontend/images/video/4.png')}}" alt=""></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -714,7 +747,7 @@
                                                 <div class="box-con">
                                                     <div class="dbox">
                                                         <div class="dleft">
-                                                            <div class="imgs"><img src="images/video/5.png" alt=""></div>
+                                                            <div class="imgs"><img src="{{ asset('assets/frontend/images/video/5.png')}}" alt=""></div>
                                                         </div>
                                                         <div class="dright">
                                                             <div class="content">
@@ -735,7 +768,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="dright">
-                                                            <div class="imgs"><img src="images/video/6.png" alt=""></div>
+                                                            <div class="imgs"><img src="{{ asset('assets/frontend/images/video/6.png')}}" alt=""></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -750,7 +783,7 @@
                                                 <div class="box-con">
                                                     <div class="dbox">
                                                         <div class="dleft">
-                                                            <div class="imgs"><img src="images/video/7.png" alt=""></div>
+                                                            <div class="imgs"><img src="{{ asset('assets/frontend/images/video/7.png')}}" alt=""></div>
                                                         </div>
                                                         <div class="dright">
                                                             <div class="content">
@@ -771,7 +804,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="dright">
-                                                            <div class="imgs"><img src="images/video/8.png" alt=""></div>
+                                                            <div class="imgs"><img src="{{ asset('assets/frontend/images/video/8.png')}}" alt=""></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -997,7 +1030,7 @@
                                 <div class="conte">
                                     <div class="dbox">
                                         <div class="dleft">
-                                            <img src="images/team/1.png" alt="">
+                                            <img src="{{ asset('assets/frontend/images/team/1.png')}}" alt="">
                                         </div>
                                         <div class="dright">
                                             <div class="content">
@@ -1022,7 +1055,7 @@
                                 <div class="conte">
                                     <div class="dbox">
                                         <div class="dleft">
-                                            <img src="images/team/2.png" alt="">
+                                            <img src="{{ asset('assets/frontend/images/team/2.png')}}" alt="">
                                         </div>
                                         <div class="dright">
                                             <div class="content">
@@ -1047,7 +1080,7 @@
                                 <div class="conte">
                                     <div class="dbox">
                                         <div class="dleft">
-                                            <img src="images/team/3.png" alt="">
+                                            <img src="{{ asset('assets/frontend/images/team/3.png')}}" alt="">
                                         </div>
                                         <div class="dright">
                                             <div class="content">
@@ -1072,7 +1105,7 @@
                                 <div class="conte">
                                     <div class="dbox">
                                         <div class="dleft">
-                                            <img src="images/team/4.png" alt="">
+                                            <img src="{{ asset('assets/frontend/images/team/4.png')}}" alt="">
                                         </div>
                                         <div class="dright">
                                             <div class="content">
@@ -1111,7 +1144,7 @@
                             <div class="conte">
                                 <div class="dbox">
                                     <div class="dleft">
-                                        <img src="images/team/5.png" alt="">
+                                        <img src="{{ asset('assets/frontend/images/team/5.png')}}" alt="">
                                     </div>
                                     <div class="dright">
                                         <div class="content">
@@ -1136,7 +1169,7 @@
                             <div class="conte">
                                 <div class="dbox">
                                     <div class="dleft">
-                                        <img src="images/team/6.png" alt="">
+                                        <img src="{{ asset('assets/frontend/images/team/6.png')}}" alt="">
                                     </div>
                                     <div class="dright">
                                         <div class="content">
@@ -1161,7 +1194,7 @@
                             <div class="conte">
                                 <div class="dbox">
                                     <div class="dleft">
-                                        <img src="images/team/7.png" alt="">
+                                        <img src="{{ asset('assets/frontend/images/team/7.png')}}" alt="">
                                     </div>
                                     <div class="dright">
                                         <div class="content">
@@ -1186,7 +1219,7 @@
                             <div class="conte">
                                 <div class="dbox">
                                     <div class="dleft">
-                                        <img src="images/team/8.png" alt="">
+                                        <img src="{{ asset('assets/frontend/images/team/8.png')}}" alt="">
                                     </div>
                                     <div class="dright">
                                         <div class="content">
@@ -1234,7 +1267,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="section-heading2">
-                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Latest News</h2>
+                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Programs & Projects</h2>
                         </div>
                     </div>
                 </div>
@@ -1242,7 +1275,7 @@
                     <div class="blog-slider">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="blog wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
-                                <figure><img src="images/blog/1.jpg" alt=""></figure>
+                                <figure><img src="{{ asset('assets/frontend/images/blog/1.jpg')}}" alt=""></figure>
                                 <div class="content">
                                     <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
                                     <h4><a href="#">Report about the team's trip to the road show</a></h4>
@@ -1253,7 +1286,7 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="blog wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
-                                <figure><img src="images/blog/2.jpg" alt=""></figure>
+                                <figure><img src="{{ asset('assets/frontend/images/blog/2.jpg')}}" alt=""></figure>
                                 <div class="content">
                                     <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
                                     <h4><a href="#">Report about the team's trip to the road show</a></h4>
@@ -1264,7 +1297,7 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
-                                <figure><img src="images/blog/3.jpg" alt=""></figure>
+                                <figure><img src="{{ asset('assets/frontend/images/blog/3.jpg')}}" alt=""></figure>
                                 <div class="content">
                                     <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
                                     <h4><a href="#">Report about the team's trip to the road show</a></h4>
@@ -1275,7 +1308,7 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="blog">
-                                <figure><img src="images/blog/1.jpg" alt=""></figure>
+                                <figure><img src="{{ asset('assets/frontend/images/blog/1.jpg')}}" alt=""></figure>
                                 <div class="content">
                                     <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
                                     <h4><a href="#">Report about the team's trip to the road show</a></h4>
@@ -1286,7 +1319,7 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="blog">
-                                <figure><img src="images/blog/2.jpg" alt=""></figure>
+                                <figure><img src="{{ asset('assets/frontend/images/blog/2.jpg')}}" alt=""></figure>
                                 <div class="content">
                                     <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
                                     <h4><a href="#">Report about the team's trip to the road show</a></h4>
@@ -1297,7 +1330,7 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="blog">
-                                <figure><img src="images/blog/3.jpg" alt=""></figure>
+                                <figure><img src="{{ asset('assets/frontend/images/blog/3.jpg')}}" alt=""></figure>
                                 <div class="content">
                                     <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
                                     <h4><a href="#">Report about the team's trip to the road show</a></h4>
@@ -1325,28 +1358,28 @@
                         <div class="mediabrand">
                             <ul>
                                 <li class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
-                                    <a href="#"><img src="images/media/1.png" alt=""></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/media/1.png') }}" alt=""></a>
                                 </li>
                                 <li class="wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
-                                    <a href="#"><img src="images/media/2.png" alt=""></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/media/2.png') }}" alt=""></a>
                                 </li>
                                 <li class="wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
-                                    <a href="#"><img src="images/media/3.png" alt=""></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/media/3.png') }}" alt=""></a>
                                 </li>
                                 <li class="wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
-                                    <a href="#"><img src="images/media/4.png" alt=""></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/media/4.png') }}" alt=""></a>
                                 </li>
                                 <li class="wow  fadeInUp animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: fadeInUp;">
-                                    <a href="#"><img src="images/media/5.png" alt=""></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/media/5.png') }}" alt=""></a>
                                 </li>
                                 <li class="wow  fadeInUp animated" data-wow-duration="2.7s" style="visibility: visible; animation-duration: 2.7s; animation-name: fadeInUp;">
-                                    <a href="#"><img src="images/media/6.png" alt=""></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/media/6.png') }}" alt=""></a>
                                 </li>
 								<li class="wow  fadeInUp animated" data-wow-duration="2.7s" style="visibility: visible; animation-duration: 2.7s; animation-name: fadeInUp;">
-                                    <a href="#"><img src="images/media/7.png" alt=""></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/media/7.png') }}" alt=""></a>
                                 </li>
 								<li class="wow  fadeInUp animated" data-wow-duration="2.7s" style="visibility: visible; animation-duration: 2.7s; animation-name: fadeInUp;">
-                                    <a href="#"><img src="images/media/8.png" alt=""></a>
+                                    <a href="#"><img src="{{ asset('assets/frontend/images/media/8.png') }}" alt=""></a>
                                 </li>
                             </ul>
                         </div>
@@ -1355,95 +1388,13 @@
             </div>
         </section>
         <!--Footer area start here-->
-        <footer class="top-foo">
-            <div id="footer-js">
-                <div class="footer-top section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="con">
-                                    <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Subscribe to us!</h2>
-                                    <ul>
-                                        <li class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="wow  fadeInUp animated" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5; animation-name: fadeInUp;"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li class="wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;"><a href="#"><i class="fa fa-send-o"></i></a></li>
-                                        <li class="wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;"><a href="#"><i class="fa fa-bitcoin"></i></a></li>
-                                        <li class="wow  fadeInUp animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: fadeInUp;"><a href="#"><i class="fa fa-envelope"></i></a></li>
-                                    </ul>
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="search_btm wow  fadeInUp animated" data-wow-duration="2.6s" style="visibility: visible; animation-duration: 2.6s; animation-name: fadeInUp;">
-                                                <div class="search_main">
-                                                    <input type="text" placeholder="enter your email address">
-                                                    <button type="submit">subscribe</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <footer class="foo-bot">
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="copyright wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                                <p>© 2020-2021 <a href="#"><span>Bit Money</span></a> | All rights reserved. Design by
-                                    <a href="http://webstrot.com/" target="_blank"> <span>webstrot</span></a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="foo-link wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                                <ul>
-                                    <li><a href="#">WhitePaper</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+
+        @include('home.partials.footer')
+
     </div>
-    <!--Footer area end here-->
-    <!-- all js here -->
-    <!-- jquery latest version -->
-    <script src="{{ asset('assets/frontend/js/vendor/jquery-3.2.1.min.js') }}"></script>
-    <!-- tether js -->
-    <script src="{{ asset('assets/frontend/js/tether.min.js') }}"></script>
-    <!-- bootstrap js -->
-    <script src="{{ asset('assets/frontend/js/bootstrap.min.js') }}"></script>
-    <!-- owl.carousel js -->
-    <script src="{{ asset('assets/frontend/js/owl.carousel.min.js') }}"></script>
-    <!-- meanmenu js -->
-    <script src="{{ asset('assets/frontend/js/jquery.meanmenu.js') }}"></script>
-    <!-- jquery-ui js -->
-    <script src="{{ asset('assets/frontend/js/jquery-ui.min.js') }}"></script>
-    <!-- easypiechart js -->
-    <script src="{{ asset('assets/frontend/js/jquery.easypiechart.min.js') }}"></script>
-    <!-- particles js -->
-    <!-- wow js -->
-    <script src="{{ asset('assets/frontend/js/wow.min.js') }}"></script>
-    <!-- smooth-scroll js -->
-    <script src="{{ asset('assets/frontend/js/smooth-scroll.min.js') }}"></script>
-    <!-- plugins js -->
-    <script src="{{ asset('assets/frontend/js/plugins.js') }}"></script>
-    <!-- EChartJS JavaScript -->
-    <script src="{{ asset('assets/frontend/js/echarts-en.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/js/echarts-liquidfill.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/js/vc_round_chart.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/js/videojs-ie8.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/js/video.js') }}"></script>
-    <script src="{{ asset('assets/frontend/js/Youtube.min.js') }}"></script>
-    <!-- main js -->
-    <script src="{{ asset('assets/frontend/js/main.js') }}"></script>
+
+    @include('home.partials.script')
+
 </body>
 
 </html>

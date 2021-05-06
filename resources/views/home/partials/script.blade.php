@@ -1,0 +1,32 @@
+    <!--Footer area end here-->
+    <!-- all js here -->
+    <!-- jquery latest version -->
+    <script src="{{ asset('assets/frontend/js/vendor/jquery-3.2.1.min.js') }}"></script>
+    <!-- tether js -->
+    <script src="{{ asset('assets/frontend/js/tether.min.js') }}"></script>
+    <!-- bootstrap js -->
+    <script src="{{ asset('assets/frontend/js/bootstrap.min.js') }}"></script>
+    <!-- owl.carousel js -->
+    <script src="{{ asset('assets/frontend/js/owl.carousel.min.js') }}"></script>
+    <!-- meanmenu js -->
+    <script src="{{ asset('assets/frontend/js/jquery.meanmenu.js') }}"></script>
+    <!-- jquery-ui js -->
+    <script src="{{ asset('assets/frontend/js/jquery-ui.min.js') }}"></script>
+    <!-- easypiechart js -->
+    <script src="{{ asset('assets/frontend/js/jquery.easypiechart.min.js') }}"></script>
+    <!-- particles js -->
+    <!-- wow js -->
+    <script src="{{ asset('assets/frontend/js/wow.min.js') }}"></script>
+    <!-- smooth-scroll js -->
+    <script src="{{ asset('assets/frontend/js/smooth-scroll.min.js') }}"></script>
+    <!-- plugins js -->
+    <script src="{{ asset('assets/frontend/js/plugins.js') }}"></script>
+    <!-- EChartJS JavaScript -->
+    <script src="{{ asset('assets/frontend/js/echarts-en.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/js/echarts-liquidfill.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/js/vc_round_chart.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/js/videojs-ie8.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/js/video.js') }}"></script>
+    <script src="{{ asset('assets/frontend/js/Youtube.min.js') }}"></script>
+    <!-- main js -->
+    <script src="{{ asset('assets/frontend/js/main.js') }}"></script>

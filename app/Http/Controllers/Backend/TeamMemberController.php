@@ -71,6 +71,50 @@ class TeamMemberController extends Controller
         return view('backend.teamMember.edit', compact('teamMember'));
     }
 
+    public function update(Request $request, $id)
+    {
+        // dd($request->all());
+
+        $this->validate($request,[
+            'name' => 'required',
+            'email' => 'required|email|unique:team_members',
+            'phone' => 'required',
+            'designation' => 'required',
+            'address' => 'required',
+            'photo' => 'required',
+        ]);
+
+           //For Image Upload
+           $photo = $request->file('photo');
+           $image = '';
+           if ($photo) {
+               $i = 0;
+               $fileEx = $photo->getClientOriginalExtension();
+               $fileName = date('Ymdhis_').$i. '.'.$fileEx;
+               Image::make($photo)
+               ->resize(400,400)
+               ->save(public_path('uploads/member_pic/').$fileName );
+               $image = $fileName;
+           }
+
+        try{
+            $teamMembers = TeamMember::findOrFail($id);
+            $teamMembers->name = $request->name;
+            $teamMembers->email = $request->email;
+            $teamMembers->phone = $request->phone;
+            $teamMembers->designation = $request->designation;
+            $teamMembers->address = $request->address;
+            $teamMembers->photo = $image;
+
+            if($teamMembers->save())
+            {
+                return back()->with('success', 'Team member updated successfully!');
+            }
+        }catch(Exception $e){
+           // dd($e);
+        }
+    }
+
     public function delete($id){
         $teamMember = TeamMember::findOrFail($id);
         if($teamMember){
