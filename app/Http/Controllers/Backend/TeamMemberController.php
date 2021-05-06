@@ -65,4 +65,22 @@ class TeamMemberController extends Controller
         }
 
     }
+
+    public function edit($id){
+        $teamMember = TeamMember::findOrFail($id);
+        return view('backend.teamMember.edit', compact('teamMember'));
+    }
+
+    public function delete($id){
+        $teamMember = TeamMember::findOrFail($id);
+        if($teamMember){
+            if(file_exists('uploads/member_pic/'.$teamMember->photo) AND !empty($teamMember->photo)){
+                unlink('uploads/member_pic/'.$teamMember->photo);
+            }
+            $teamMember->delete();
+            return redirect()->back()->with('success','Team member successfully deleted.');
+        }else{
+            return redirect()->back()->with('error','Something Error Found !, Please try again.');
+        }
+    }
 }

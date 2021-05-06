@@ -45,10 +45,12 @@
                                 <td>{{ $teamMember->email }}</td>
                                 <td>{{ $teamMember->phone }}</td>
                                 <td>{{ $teamMember->designation }}</td>
-                                <td>{{ $teamMember->photo }}</td>
                                 <td>
-                                    <a href="" class="btn btn-info btn-xs"> <i class="fa fa-edit"></i> </a>
-                                    <a href="" class="btn btn-danger btn-xs"> <i class="fa fa-trash-alt"></i> </a>
+                                    <img style="width: 60px; height:60px" src="{{ asset('uploads/member_pic/'.$teamMember->photo) }}" alt="">
+                                </td>
+                                <td>
+                                    <a href="{{ route('teamMember.edit',$teamMember->id) }}" class="btn btn-info btn-xs"> <i class="fa fa-edit"></i> </a>
+                                    <a href="{{ route('teamMember.delete',$teamMember->id) }}" class="btn btn-danger btn-xs"> <i class="fa fa-trash-alt"></i> </a>
                                 </td>
                               </tr>
                             @endforeach
