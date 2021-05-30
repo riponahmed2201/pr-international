@@ -255,92 +255,96 @@
 
        @include('home.pages.project_program')
 
-       <section class="media-area section bg-img jarallax" style="background: white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="section-heading">
-                        <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp; color:black">
-                            Our Worldwide Valued Principles
-                        </h2>
+        <section class="media-area section bg-img jarallax" style="background: white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-heading">
+                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp; color:black">
+                                Our Worldwide Valued Principles
+                            </h2>
+                        </div>
                     </div>
-                </div>
 
 
-                <div>
-                    <p>
-                        <b style="color: #ed7d31">P.R. International</b> currently associated with principles from USA, Turkey and UAE. Our valued principles are
-                        participating tender and direct purchase opportunities of DGDP in a regular basis and they have very high
-                        contract wining record. We believe this is only possible through our close communication, in depth market
-                        analysis and competitive pricing.
-                    </p>
+                    <div>
+                        <p>
+                            <b style="color: #ed7d31">P.R. International</b> currently associated with principles from USA, Turkey and UAE. Our valued principles are
+                            participating tender and direct purchase opportunities of DGDP in a regular basis and they have very high
+                            contract wining record. We believe this is only possible through our close communication, in depth market
+                            analysis and competitive pricing.
+                        </p>
 
-                    <div style="text-align: center">
-                        <img src="{{ asset('assets/frontend/images/world_wide_value.png') }}" alt="">
+                        <div style="text-align: center">
+                            <img src="{{ asset('assets/frontend/images/world_wide_value.png') }}" alt="">
+                        </div>
+                        <br>
+
+                        <div>
+                            <div style="text-align: center; color:black">
+                                <strong> “We make war that we may live in peace” </strong>
+                            </div>
+                            <div style="text-align: center; color:black">
+                                <strong> - Aristotle </strong>
+                            </div>
+                        </div>
                     </div>
                     <br>
+                    <br>
 
-                    <div>
-                        <div style="text-align: center; color:black">
-                             <strong> “We make war that we may live in peace” </strong>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div>
+                            <h4 style="color: chocolate"> The Secret of Our
+                                Success! </h4>
+                                <p style="color: black">
+                                    Our principle companies
+                                    have a qualified technical
+                                    team who deals installation
+                                    works, after commissioning
+                                    services and maintenance
+                                    during warranty and
+                                    post-warranty period of the
+                                    contracts. The technical
+                                    team consist of well trained
+                                    and experienced people.
+                                </p>
                         </div>
-                        <div style="text-align: center; color:black">
-                             <strong> - Aristotle </strong>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div>
+                            <img style="height: 450px" src="{{ asset('assets/frontend/images/success_img.png') }}" alt="">
                         </div>
-                     </div>
-                </div>
-                <br>
-                <br>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <div>
-                        <h4 style="color: chocolate"> The Secret of Our
-                            Success! </h4>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="row">
+                        <img src="{{ asset('assets/frontend/images/success_icon_1.png') }}" alt="">
                             <p style="color: black">
-                                Our principle companies
-                                have a qualified technical
-                                team who deals installation
-                                works, after commissioning
-                                services and maintenance
-                                during warranty and
-                                post-warranty period of the
-                                contracts. The technical
-                                team consist of well trained
-                                and experienced people.
+                                Quality is pride of workmanship.
                             </p>
+                        </div>
+                        <div class="row">
+                            <img src="{{ asset('assets/frontend/images/success_icon_2.png') }}" alt="">
+                            <p style="color: black">
+                                The service should not be
+                                the best, it should be
+                                legendary.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <img src="{{ asset('assets/frontend/images/success_icon_3.png') }}" alt="">
+                            <p style="color: black">
+                                We made our passion our
+                                profession.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <div>
-                        <img style="height: 450px" src="{{ asset('assets/frontend/images/success_img.png') }}" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <div class="row">
-                       <img src="{{ asset('assets/frontend/images/success_icon_1.png') }}" alt="">
-                        <p style="color: black">
-                            Quality is pride of workmanship.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <img src="{{ asset('assets/frontend/images/success_icon_2.png') }}" alt="">
-                         <p style="color: black">
-                            The service should not be
-                            the best, it should be
-                            legendary.
-                         </p>
-                     </div>
-                     <div class="row">
-                        <img src="{{ asset('assets/frontend/images/success_icon_3.png') }}" alt="">
-                         <p style="color: black">
-                            We made our passion our
-                            profession.
-                         </p>
-                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        @include('home.pages.achivement')
+
+        @include('home.pages.team_message')
 
         <section class="media-area section bg-img jarallax">
             <div class="container">
@@ -354,10 +358,10 @@
                     </div>
                     <div class="card">
                        <div class="card-body">
-                           <div class="col-lg-3 col-md-3"></div>
+                           <div class="col-lg-4 col-md-4"></div>
                         <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
                             <figure>
-                                <img src="{{ asset('assets/frontend/images/core_team_1.png')}}" alt="">
+                                <img style="width: 200px; height:200px" src="{{ asset('assets/frontend/images/proprietor.JPG')}}" alt="">
                             </figure>
                             <br>
                             <div class="content">
@@ -366,20 +370,10 @@
                                 <h6>P.R. International</h6>
                             </div>
                         </div>
+
                         <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
                             <figure>
-                                <img src="{{ asset('assets/frontend/images/core_team_2.png')}}" alt="">
-                            </figure>
-                            <br>
-                            <div class="content">
-                                <strong> Saeed Ur Rashid </strong>
-                                <h4>CEO</h4>
-                                <h6>P.R. International</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                            <figure>
-                                <img src="{{ asset('assets/frontend/images/core_team_3.png')}}" alt="">
+                                <img style="width: 200px; height:200px" src="{{ asset('assets/frontend/images/manager.jpg')}}" alt="">
                             </figure>
                             <br>
                             <div class="content">
@@ -388,13 +382,14 @@
                                 <h6>P.R. International</h6>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3"></div>
+                        <div class="col-lg-4 col-md-4"></div>
                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--Footer area start here-->
+
 
         @include('home.partials.footer')
 
