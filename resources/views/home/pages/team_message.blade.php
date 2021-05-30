@@ -1,5 +1,6 @@
 <div class="wd_scroll_wrap">
-    <section class="blog-area section">        <div class="container">
+    <section class="blog-area section">        
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="about-content">

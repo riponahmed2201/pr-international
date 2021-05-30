@@ -44,11 +44,8 @@
                                                     <li data-animation="animated bounceInDown" class="slider_social_icon4"><a href="#"><i class="fa fa-bitcoin"></i></a></li>
                                                     <li data-animation="animated bounceInDown" class="slider_social_icon5"><a href="#"><i class="fa fa-envelope"></i></a></li>
                                                 </ul>
-                                                <h2 data-animation="animated bounceInLeft">Bit Money - Lending & <br>Investment Platform</h2>
-                                                <div class="buttons">
-                                                    <a href="#" class="btn1" data-animation="animated bounceInUp">WHITEPAPER</a>
-                                                    <a href="#" class="btn2" data-animation="animated bounceInUp">Buy Tokens Now!</a>
-                                                </div>
+                                                <h2 data-animation="animated bounceInLeft">PR International - Lending & <br>Investment Platform</h2>
+
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs hidden-sm">
@@ -89,11 +86,8 @@
                                                 <li data-animation="animated bounceInDown" class="slider_social_icon4"><a href="#"><i class="fa fa-bitcoin"></i></a></li>
                                                 <li data-animation="animated bounceInDown" class="slider_social_icon5"><a href="#"><i class="fa fa-envelope"></i></a></li>
                                             </ul>
-                                            <h2 data-animation="animated bounceInLeft">Bit Money - Lending & <br>Investment Platform</h2>
-                                            <div class="buttons">
-                                                <a href="#" class="btn1" data-animation="animated bounceInUp">WHITEPAPER</a>
-                                                <a href="#" class="btn2" data-animation="animated bounceInUp">Buy Tokens Now!</a>
-                                            </div>
+                                            <h2 data-animation="animated bounceInLeft">PR International - Lending & <br>Investment Platform</h2>
+
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  hidden-xs hidden-sm">
@@ -161,10 +155,10 @@
                                 ammunition & aeroplane spare parts
                                 for Bangladesh Defence.
                             </p>
-                            <div class="buttons">
+                            {{-- <div class="buttons">
                                 <a href="#" class="btn1">WHITEPAPER</a>
                                 <a href="#" class="btn3">Buy Tokens Now!</a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -351,7 +345,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="section-heading">
-                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                            <h2 class="wow mt-4 fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
                                 CORE TEAM
                             </h2>
                         </div>
