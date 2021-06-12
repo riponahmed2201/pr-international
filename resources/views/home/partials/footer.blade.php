@@ -1,13 +1,14 @@
-<footer class="top-foo">
-    <div id="footer-js">
-        <div class="footer-top section">
-            <div class="container">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="con">
-                        <img style="width: 241px; height:66px" src="{{ asset('assets/backend/logo/PR.png') }}" alt="">
-                        <br>
-                        <br>
-                        <div style="color: #ed7d31">
+<footer class="site-footer footer-v1">
+
+	<div class="col-full">
+		</div>
+		<!-- .footer-widgets-block -->
+		<div class="site-info">
+			<div class="col-full">
+				<div class="row">
+                <div class="col-md-3"></div>
+					<div class="col-md-6">
+                        <div style="color: #ed7d31; text-align:center" class="all__font__change">
                             <strong>
                                 Cor. Office : 499 Mohakhali DOHS, Mohakhali, Dhaka-1206
                             </strong> <br>
@@ -18,50 +19,38 @@
                                 Contact : +880 1799881966, +880 01789069539
                             </strong> <br>
                             <strong>
-                                Email: sales@printernational.co
+                                Email: hasib@printernational.net
                             </strong> <br>
                             <strong>
-                                www.printernational.com
+                                www.printernational.net
                             </strong>
                         </div>
-                        {{-- <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="search_btm wow  fadeInUp animated" data-wow-duration="2.6s" style="visibility: visible; animation-duration: 2.6s; animation-name: fadeInUp;">
-                                        <div class="search_main">
-                                            <input type="text" placeholder="enter your email address">
-                                            <button type="submit">subscribe</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> --}}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+					</div>
+
+                    <div class="col-md-3"></div>
+
+				</div>
+			</div>
+			<!-- .col-full -->
+		</div>
+		<!-- .site-info -->
+	</div>
+	<!-- .col-full -->
 </footer>
+
 <footer class="foo-bot">
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center">
-                    <div class="copyright wow  fadeInUp animated" data-wow-duration="1.9s"
+                    <div class="copyright wow all__font__change fadeInUp animated" data-wow-duration="1.9s"
                         style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                        <p>© 2021-2022 <a href="#"><span>PR International</span></a> | All rights reserved. Design by
-                            <a href="http://printernational.com/" target="_blank"> <span>PR International</span></a>
+                        <p>© 2021-2022 <a href="#"><span>P.R. International</span></a> | All rights reserved. Design by
+                            <a href="https://www.printernational.net/" target="_blank"> <span>P.R. International</span></a>
                         </p>
                     </div>
                 </div>
-                {{-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="foo-link wow  fadeInUp animated" data-wow-duration="1.0s"
-                        style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                        <ul>
-                            <li><a href="#">WhitePaper</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div> --}}
+            
             </div>
         </div>
     </div>

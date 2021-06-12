@@ -4,7 +4,7 @@
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-6">
                 <div class="logo-area">
                     <a href="{{ url('/') }}">
-                      <img style="width: 241px; height:66px" src="{{ asset('assets/backend/logo/PR.png') }}" alt="">
+                      <img style="width: 241px; height:66px" src="{{ asset('assets/frontend/logo/451.png') }}" alt="">
                         {{-- <img src="{{ asset('assets/frontend/images/logo/logo.png') }}" alt="logo"> --}}
                     </a>
                 </div>
@@ -14,13 +14,13 @@
                 <div class="menu-area  hidden-xs">
                     <nav class="wd_single_index_menu btc_main_menu">
                         <ul>
-                            <li><a href="0">Home</a></li>
-                            <li><a href="1">Who we are</a></li>
-                            <li><a href="2">What we do</a></li>
-                            <li><a href="3">Defense</a></li>
-                            <li><a href="4">Civil</a></li>
-                            <li><a href="5">Contact</a></li>
-                            <li><a href="7">Projects</a></li>
+                            <li><a href="0" class="all__font__change">Home</a></li>
+                            <li><a href="1" class="all__font__change">Who we are</a></li>
+                            <li><a href="achivement" class="all__font__change">What we do</a></li>
+                            <li><a href="defense" class="all__font__change">Defense</a></li>
+                            <li><a href="4" class="all__font__change">Civil</a></li>
+                            <li><a href="contact" class="all__font__change">Contact</a></li>
+                            <li><a href="7" class="all__font__change">Projects</a></li>
                         </ul>
                     </nav>
                     <div class="language">

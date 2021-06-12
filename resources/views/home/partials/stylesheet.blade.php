@@ -29,3 +29,7 @@
 <!-- modernizr css -->
 <script src="{{ asset('assets/frontend/js/vendor/modernizr-2.8.3.min.js') }}"></script>
 <script src='../../../google_analytics_auto.js'></script>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Mate+SC&display=swap" rel="stylesheet">

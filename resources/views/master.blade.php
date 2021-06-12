@@ -6,6 +6,21 @@
 
     @include('home.partials.stylesheet')
 
+    <style>
+        .all__font__change{
+            font-family:'Fira Code', monospace;
+            font-weight: 500;
+        }
+
+        .image__shadow {
+            -moz-box-shadow:    inset 0 0 10px #000000;
+            -webkit-box-shadow: inset 0 0 10px #000000;
+            box-shadow:         inset 0 0 10px #000000;
+        }
+
+    </style>
+
+
 </head>
 
 <body>
@@ -37,20 +52,15 @@
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                             <div class="slider-content">
-                                                <ul>
-                                                    <li data-animation="animated bounceInDown" class="slider_social_icon1"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                    <li data-animation="animated bounceInDown" class="slider_social_icon2"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                    <li data-animation="animated bounceInDown" class="slider_social_icon3"><a href="#"><i class="fa fa-send-o"></i></a></li>
-                                                    <li data-animation="animated bounceInDown" class="slider_social_icon4"><a href="#"><i class="fa fa-bitcoin"></i></a></li>
-                                                    <li data-animation="animated bounceInDown" class="slider_social_icon5"><a href="#"><i class="fa fa-envelope"></i></a></li>
-                                                </ul>
-                                                <h2 data-animation="animated bounceInLeft">PR International - Lending & <br>Investment Platform</h2>
 
+                                                <h2 data-animation="animated bounceInLeft" class="all__font__change" style="color: #e67930; text-align:center">
+                                                    P.R. International
+                                                </h2>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs hidden-sm">
                                             <div class="btc_timer_section_wrapper">
-                                                <div id="clockdiv">
+                                                <div id="clockdiv" style="display: none">
                                                     <div>
                                                         <span class="days"></span>
                                                         <div class="smalltext">Days</div>
@@ -71,7 +81,31 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
+                               <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2 class="all__font__change">Our Mission</h2>
+                                        <p class="all__font__change text-justify">
+                                            To serve by providing the
+                                            best system and
+                                            technologies that will
+                                            assure security and
+                                            freedom of our country
+                                            and her allies.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2 class="all__font__change">Our Vision</h2>
+                                        <p class="all__font__change text-justify">
+                                            A business world full of
+                                            connection, meaning and
+                                            prosperity for all.
+                                        </p>
+                                    </div>
+                                </div>
+                               </div>
                             </div>
                         </div>
                         <div class="item">
@@ -80,19 +114,16 @@
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <div class="slider-content">
                                             <ul>
-                                                <li data-animation="animated bounceInDown" class="slider_social_icon1"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li data-animation="animated bounceInDown" class="slider_social_icon2"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li data-animation="animated bounceInDown" class="slider_social_icon3"><a href="#"><i class="fa fa-send-o"></i></a></li>
-                                                <li data-animation="animated bounceInDown" class="slider_social_icon4"><a href="#"><i class="fa fa-bitcoin"></i></a></li>
-                                                <li data-animation="animated bounceInDown" class="slider_social_icon5"><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                               <!-- <li data-animation="animated bounceInDown" class="slider_social_icon1"><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+                                                <!-- <li data-animation="animated bounceInDown" class="slider_social_icon2"><a href="mailto:hasib@printernational.net"><i class="fa fa-envelope"></i></a></li> -->
                                             </ul>
-                                            <h2 data-animation="animated bounceInLeft">PR International - Lending & <br>Investment Platform</h2>
+                                            <h2 data-animation="animated bounceInLeft">P.R. International</h2>
 
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  hidden-xs hidden-sm">
                                         <div class="btc_timer_section_wrapper">
-                                            <div id="clockdiv2">
+                                            <div id="clockdiv2" style="display: none">
                                                 <div>
                                                     <span class="days"></span>
                                                     <div class="smalltext">Days</div>
@@ -131,7 +162,7 @@
     </div>
 
     <!--Our Mission & Vission area start here-->
-    @include('home.pages.mission_vission')
+    {{-- @include('home.pages.mission_vission') --}}
 
     <!--Who we are area start here-->
     <div section-scroll='1' class="wd_scroll_wrap">
@@ -140,8 +171,8 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="about-content">
-                            <h2 class="f-40 fw-400 wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Who we are?</h2>
-                            <p class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp; color:white">
+                            <h2 class="f-40 fw-400 wow all__font__change fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Who we are?</h2>
+                            <p class="wow all__font__change fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp; color:white">
                                 We P.R. International a Bangladesh
                                 based defence product supplier
                                 company registered and exclusively
@@ -162,25 +193,29 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="about-img wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                            <img src="{{ asset('assets/frontend/images/about/1.png') }}" alt="">
+                        <div class="about-img wow image__shadow fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                            <img class="image__shadow" style="width: 655px; height:390px" src="{{ asset('assets/frontend/picture/Big_Picture_C130J_BAF.jpg') }}" alt="">
                         </div>
                     </div>
                 </div>
+                <br>
+                <br><br><br><br>
 
-                <h6 class="f-40 fw-400 wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp; color:#9f9f9f; text-align: center;">
+
+                <div section-scroll='defense' class="wd_scroll_wrap">
+                                    <h6 class="f-40 fw-400 wow all__font__change fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp; color:#9f9f9f; text-align: center;">
                     The best the market can offer
                 </h6>
-                <h2 style="color:#ed7d31; text-align: center;">We Serve</h2>
+                <h2 class="all__font__change" style="color:#ed7d31; text-align: center;">We Serve</h2>
                 <div class="row">
                     <div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                             <div class="about-content">
-                                <img src="{{ asset('assets/frontend/images/about/1.png') }}" alt="">
+                                <img style="width: 262px; height:156px" src="{{ asset('assets/frontend/picture/Sniper.jpg') }}" alt="">
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <p class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp; color:white">
+                            <p class="wow all__font__change fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp; color:white">
                                 We offer military grade
                                 hand guns, Assault rifles,
                                 Sniper rifles, Guided anti
@@ -192,11 +227,11 @@
                     <div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                             <div class="about-content">
-                                <img src="{{ asset('assets/frontend/images/about/1.png') }}" alt="">
+                                <img style="width: 262px; height:156px" src="{{ asset('assets/frontend/picture/7.62_ammo.jpg') }}" alt="">
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <p class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp; color:white">
+                            <p class="wow all__font__change fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp; color:white">
                                 We serve top quality live
                                 ammunition. The list
                                 consist of .22LR, 9 mm,
@@ -208,15 +243,17 @@
 
                 </div>
 
+
+                <br>
                 <div class="row">
                     <div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                             <div class="about-content">
-                                <img src="{{ asset('assets/frontend/images/about/1.png') }}" alt="">
+                                <img style="width: 262px; height:156px" src="{{ asset('assets/frontend/picture/Helicopter_MI17_BAF.jpg') }}" alt="">
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <p class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp; color:white">
+                            <p class="wow all__font__change fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp; color:white">
                                 We provide support for
                                 spare parts of AW
                                 119/139, Bell 206/212,
@@ -226,23 +263,25 @@
                         </div>
                     </div>
                 </div>
-
-               <div style="text-align: center;">
-                <div style="color:#ed7d31">
-                    <strong >
-                        “It’s an unfortunate fact that we can secure peace only by preparing for
-                        war.”
-                    </strong>
-                </div>
-                <div  style="color:#ed7d31">
-                    <strong>
-                       - John F. Kennedy
-                    </strong>
-                </div>
-               </div>
-
+                 </div>
             </div>
+
         </section>
+        <br>
+        <div style="text-align: center;">
+            <div style="color:#ed7d31;" class="all__font__change">
+
+                <strong >
+                    “It’s an unfortunate fact that we can secure peace only by preparing for
+                    war.”
+                </strong>
+            </div>
+            <div  style="color:#ed7d31" class="all__font__change">
+                <strong>
+                   - John F. Kennedy
+                </strong>
+            </div>
+           </div>
     </div>
 
     <div section-scroll='7' class="wd_scroll_wrap">
@@ -254,7 +293,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="section-heading">
-                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp; color:black">
+                            <h2 class="wow all__font__change fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp; color:#ed7d31">
                                 Our Worldwide Valued Principles
                             </h2>
                         </div>
@@ -262,8 +301,8 @@
 
 
                     <div>
-                        <p>
-                            <b style="color: #ed7d31">P.R. International</b> currently associated with principles from USA, Turkey and UAE. Our valued principles are
+                        <p class="all__font__change">
+                            <b style="color: #ed7d31" >P.R. International</b> currently associated with principles from USA, Turkey and UAE. Our valued principles are
                             participating tender and direct purchase opportunities of DGDP in a regular basis and they have very high
                             contract wining record. We believe this is only possible through our close communication, in depth market
                             analysis and competitive pricing.
@@ -275,10 +314,10 @@
                         <br>
 
                         <div>
-                            <div style="text-align: center; color:black">
+                            <div style="text-align: center; color:black" class="all__font__change">
                                 <strong> “We make war that we may live in peace” </strong>
                             </div>
-                            <div style="text-align: center; color:black">
+                            <div style="text-align: center; color:black" class="all__font__change">
                                 <strong> - Aristotle </strong>
                             </div>
                         </div>
@@ -288,9 +327,9 @@
 
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                         <div>
-                            <h4 style="color: chocolate"> The Secret of Our
+                            <h4 style="color: chocolate" class="all__font__change"> The Secret of Our
                                 Success! </h4>
-                                <p style="color: black">
+                                <p style="color: black" class="all__font__change">
                                     Our principle companies
                                     have a qualified technical
                                     team who deals installation
@@ -312,13 +351,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                         <div class="row">
                         <img src="{{ asset('assets/frontend/images/success_icon_1.png') }}" alt="">
-                            <p style="color: black">
+                            <p style="color: black" class="all__font__change">
                                 Quality is pride of workmanship.
                             </p>
                         </div>
                         <div class="row">
                             <img src="{{ asset('assets/frontend/images/success_icon_2.png') }}" alt="">
-                            <p style="color: black">
+                            <p style="color: black" class="all__font__change">
                                 The service should not be
                                 the best, it should be
                                 legendary.
@@ -326,7 +365,7 @@
                         </div>
                         <div class="row">
                             <img src="{{ asset('assets/frontend/images/success_icon_3.png') }}" alt="">
-                            <p style="color: black">
+                            <p style="color: black" class="all__font__change">
                                 We made our passion our
                                 profession.
                             </p>
@@ -339,50 +378,6 @@
         @include('home.pages.achivement')
 
         @include('home.pages.team_message')
-
-        <section class="media-area section bg-img jarallax">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="section-heading">
-                            <h2 class="wow mt-4 fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                                CORE TEAM
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="card">
-                       <div class="card-body">
-                           <div class="col-lg-4 col-md-4"></div>
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                            <figure>
-                                <img style="width: 200px; height:200px" src="{{ asset('assets/frontend/images/proprietor.JPG')}}" alt="">
-                            </figure>
-                            <br>
-                            <div class="content">
-                                <strong> Mr. Hasan Mahmud </strong>
-                                <h4>Proprietor</h4>
-                                <h6>P.R. International</h6>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                            <figure>
-                                <img style="width: 200px; height:200px" src="{{ asset('assets/frontend/images/manager.jpg')}}" alt="">
-                            </figure>
-                            <br>
-                            <div class="content">
-                                <strong> Abdullah Al Hasib </strong>
-                                <h4>Manager</h4>
-                                <h6>P.R. International</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4"></div>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Footer area start here-->
 
 
         @include('home.partials.footer')
