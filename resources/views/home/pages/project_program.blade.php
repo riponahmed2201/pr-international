@@ -19,7 +19,9 @@
             <div class="blog-slider">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="blog wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
-                        <figure><img style="width: 360px; height:400px" src="{{ asset('assets/frontend/project/1.jpg')}}" alt=""></figure>
+                        <figure>
+                            <img style="width: 360px; height:400px" src="{{ asset('assets/frontend/project/1.jpg')}}" alt="">
+                        </figure>
                         <div class="content">
                             <h4><a class="text-center all__font__change text-uppercase" style=" height:80px" href="javascript:void(0)">Repair/Overhaul of 03 Line Items (Vendor and Engine Parts) of Bell-206 Helicopter</a></h4>
                         </div>

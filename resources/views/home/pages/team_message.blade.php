@@ -11,7 +11,7 @@
 
 .frame {
   background-color:#ddc;
-  border:solid 5vmin #eee;
+  border:solid 3vmin #eee;
   border-bottom-color:#fff;
   border-left-color:#eee;
   border-radius:2px;
@@ -22,7 +22,7 @@
   display:inline-block;
   /* margin:10vh 10vw; */
   height:80vh;
-  padding:4vmin;
+  /*padding:4vmin;*/
   position:relative;
   text-align:center;
   &:before {
@@ -70,7 +70,7 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <p class="wow all__font__change text-justify fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp; color:white">
+                                <p class="wow all__font__change text-justify fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
                                     Having 14 years’ experience of doing business with the Defence Ministry, it will be a priority for me
                                     to ensure the smooth and speedy implementation of defence deals and projects. I have some far-
                                     fetched idea that there is always something to do for Director General Defence Purchase. I
@@ -80,7 +80,7 @@
                                 </p>
                             </div>
                         </div>
-
+<br>
                         <br>
                         <div class="row">
                             <div class="col-md-4">
@@ -99,7 +99,7 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <p class="wow all__font__change text-justify fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp; color:white">
+                                <p class="wow all__font__change text-justify fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
                                     The focused execution of P.R. International’s growth strategy enables us to achieve strong results. While
                                     we are excited about our previous year’s results, we continue to refine the execution of our business
                                     connection strategy, which will be paramount given the renewed faith principals and our clients shown
