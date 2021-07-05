@@ -446,7 +446,7 @@
                   </div>
 
                 <div class="col-lg-3">
-                    <div class="email">
+                    <div class="address">
                         <i class="bi bi-envelope"></i>
                         <h4>Email:</h4>
                         <p>hasib@printernational.com.bd</p>
@@ -454,7 +454,7 @@
                 </div>
 
                 <div class="col-lg-5">
-                <div class="phone">
+                <div class="address">
                     <i class="bi bi-phone"></i>
                     <h4>Call:</h4>
                     <p> <b>Contact :</b> +880 1799881966, +880 01789069539</p>
