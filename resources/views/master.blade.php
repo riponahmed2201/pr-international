@@ -5,7 +5,14 @@
 <head>
 
     @include('home.partials.stylesheet')
-
+    <style>
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 
 <body>
@@ -19,35 +26,49 @@
     <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
       <!-- Slide 1 -->
+      {{-- <div class="carousel-item active">
+        <div class="carousel-container">
+
+            <img class="centered" src="{{ asset('assets/frontend/picture/20.png') }}" alt="">
+            <h2 class="animate__animated animate__fadeInDown" style="color:#ef682b">Welcome to <span>P.R. International</span></h2>
+            <p class="animate__animated fanimate__adeInUp">
+              P.R. International is a Bangladesh based defence product supplier company registered and exclusively approved by Directorate General of Defence Purchase (DGDP) under the Ministry of Defence (MoD).
+              We are working with DGDP from 2003 and successfully deliver our services. We serve all kinds of arms, ammunition & aeroplane spare parts for Bangladesh Defence.
+
+            </p>
+
+        </div>
+      </div> --}}
+
       <div class="carousel-item active">
         <div class="carousel-container">
+            <img class="centered" src="{{ asset('assets/frontend/picture/23.png') }}" alt="">
           <h2 class="animate__animated animate__fadeInDown" style="color:#ef682b">Welcome to <span>P.R. International</span></h2>
-          <p class="animate__animated fanimate__adeInUp">
+          <p class="animate__animated animate__fadeInUp">
 
-                 <b style="color: #ed7d31" >P.R. International</b> is a Bangladesh based defence product supplier company registered and exclusively approved by Directorate General of Defence Purchase (DGDP) under the Ministry of Defence (MoD).
-                We are working with DGDP from 2003 and successfully deliver our services. We serve all kinds of arms, ammunition & aeroplane spare parts for Bangladesh Defence.
-
-        </p>
-          {{-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> --}}
+            <b style="color:#ef682b">P.R. International</b> is a Bangladesh based defence product supplier company registered and exclusively approved by Directorate General of Defence Purchase (DGDP) under the Ministry of Defence (MoD).
+            We are working with DGDP from 2003 and successfully deliver our services. We serve all kinds of arms, ammunition & aeroplane spare parts for Bangladesh Defence.
+           </p>
         </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown" style="color:#ef682b">Our Mission</h2>
+            <img class="centered" src="{{ asset('assets/frontend/picture/25.png') }}" alt="">
+          <h2 class="animate__animated animate__fadeInDown" style="color:#ef682b">Our Mision</h2>
           <p class="animate__animated animate__fadeInUp">
 
             To serve by providing the best system and technologies that will assure security and freedom of our country and her allies.
          </p>
-          {{-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> --}}
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown" style="color:#ef682b">Our Vission</h2>
+            <img class="centered" src="{{ asset('assets/frontend/picture/11.png') }}" alt="">
+          <h2 class="animate__animated animate__fadeInDown" style="color:#ef682b">Our Vision</h2>
           <p class="animate__animated animate__fadeInUp">
             A business world full of connection, meaning and prosperity for all.
             </p>
@@ -255,8 +276,6 @@
                 </marquee>
             </div>
          </div>
-
-
       </div>
     </section><!-- End Portfolio Section -->
 
@@ -277,7 +296,7 @@
                   <img src="{{ asset('assets/frontend/images/world_wide_value.png') }}" alt="">
               </div>
           </div>
-
+          <hr class="mt-5 mb-5">
           <div class="row mt-4">
               <div class="col-lg-4 col-md-4">
                   <h4 style="color: chocolate" class="all__font__change"> The Secret of Our

@@ -1,4 +1,4 @@
-<style>
+{{-- <style>
     .img__frame {
   border:solid 2px;
   border-bottom-color:#ffe;
@@ -85,8 +85,8 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <figure>
-                                    <img class="frame img__frame" style="width: 350px; height:350px" src="{{ asset('assets/frontend/images/manager.jpg')}}" alt="">
-                                </figure>
+                                </figure>                                    <img class="frame img__frame" style="width: 350px; height:350px" src="{{ asset('assets/frontend/images/manager.jpg')}}" alt="">
+
     
                                 <div style="text-align: center; margin-top:5px" class="all__font__change">
                                     <strong>
@@ -115,4 +115,58 @@
             </div>
         </div>
     </section>
-</div>
+</div> --}}
+
+
+
+<section id="testimonials" class="testimonials">
+    <div class="container">
+
+      <div class="section-title" data-aos="zoom-out">
+        <h2>TEAM</h2>
+        <p>OUR HARDWORKING TEAM</p>
+      </div>
+
+      <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Having 14 years’ experience of doing business with the Defence Ministry, it will be a priority for me
+                to ensure the smooth and speedy implementation of defence deals and projects. I have some far-
+                fetched idea that there is always something to do for Director General Defence Purchase. I
+                believe having a core team with the combination of technology graduates &amp; Business
+                graduates, can stimulate and offer many different perspectives on the challenges we face and
+                produce success to get more projects.                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img style="width: 82px;height:82px" src="{{ asset('assets/frontend/images/proprietor.JPG')}}" class="testimonial-img" alt="">
+              <h3> A.B.M. Mahmud Hassan</h3>
+              <h4>Proprietor</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                The focused execution of P.R. International’s growth strategy enables us to achieve strong results. While
+                we are excited about our previous year’s results, we continue to refine the execution of our business
+                connection strategy, which will be paramount given the renewed faith principals and our clients shown
+                to us. Our company realizes the importance of pursuing business connectivity in the ever expanding sea
+                of opportunity through technology leadership and geographic expansion. On behalf of our management,
+                I give thanks to our principals and clients for their continued support.                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img style="width: 82px;height:82px" src="{{ asset('assets/frontend/images/manager.jpg')}}" class="testimonial-img" alt="">
+              <h3> Md. Abdullah Al Hasib</h3>
+              <h4> Sourcing Manager</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section><!-- End Testimonials Section -->
