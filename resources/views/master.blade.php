@@ -7,10 +7,32 @@
     @include('home.partials.stylesheet')
     <style>
         .centered {
+
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+        .carousel-caption{
+            font-size: 18px;
+            font-weight: 500;
+            top: 5%;
+            left: 6%;
+            width: 400px;
+        }
+        #caption2{
+            font-size: 20px;
+            font-weight: 500;
+            top: 5%;
+            left: 65%;
+            width: 400px;
+        }
+        #caption3{
+            font-size: 20px;
+            font-weight: 500;
+            top: 10%;
+            left: 6%;
+            width: 400px;
         }
     </style>
 </head>
@@ -109,14 +131,28 @@
     <section id="about" class="about">
       <div class="container">
 
-        <div class="section-title" data-aos="zoom-out">
+        <div class="inline-block">
+
+             <div style="color:#ed7d31;" class="all__font__change text-center">
+                <marquee behavior="scroll" direction="left">
+                    {{-- “All’s fair in love and war” - F.E. Smedley --}}
+                    <span style="margin-left:1in;"></span>
+                     “It’s an unfortunate fact that we can secure peace only by preparing for war.”  - John F. Kennedy
+                      <!--<span style="margin-left:1in;"></span> -->.....
+                      “We make war that we may live in peace” - Aristotle
+                </marquee>
+            </div>
+         </div>
+
+        <div class="section-title mt-5" data-aos="zoom-out">
           <h2>About</h2>
           <p>Who we are</p>
         </div>
 
-        <div class="row content" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
           <div class="col-lg-6">
-            <p>
+            <img class="image__shadow" style="width: 1320px; height:800px" src="{{ asset('assets/frontend/picture/22.jpg') }}" alt="">
+                <p class="carousel-caption">
                 We P.R. International a Bangladesh
                 based defence product supplier
                 company registered and exclusively
@@ -128,16 +164,16 @@
                 2003 and successfully deliver our
                 services. We serve all kinds of arms,
                 ammunition & aeroplane spare parts
-                for Bangladesh Defence.
-            </p>
+                for Bangladesh Defence. </p>
+             </div>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-                <img class="image__shadow" style="width: 655px; height:390px" src="{{ asset('assets/frontend/picture/27.png') }}" alt="">
-            </p>
-          </div>
-        </div>
 
+          {{-- <hr class="mt-5"> --}}
+
+        {{-- <div class=col-12 lg-6 pt-4 pt-lg-0 mx-auto">
+            <img class="image__shadow" style="width: 1300px; height:800px" src="{{ asset('assets/frontend/picture/27.png') }}" alt="">
+        </div> --}}
+        </div>
       </div>
     </section><!-- End About Section -->
 
@@ -145,13 +181,26 @@
     <section id="defense" class="services">
       <div class="container">
 
-        <div class="section-title" data-aos="zoom-out">
+        <div class="inline-block">
+
+             <div style="color:#ed7d31;" class="all__font__change text-center">
+                <marquee behavior="scroll" direction="left">
+                    “All’s fair in love and war” - F.E. Smedley
+                    <span style="margin-left:1in;"></span>
+                     “It’s an unfortunate fact that we can secure peace only by preparing for war.”  - John F. Kennedy
+                      <!--<span style="margin-left:1in;"></span> -->.....
+                      “We make war that we may live in peace” - Aristotle
+                </marquee>
+            </div>
+         </div>
+
+        <div class="section-title mt-5" data-aos="zoom-out">
           <h2>Services</h2>
           <p>The best the market can offer</p>
           <h3>We Serve</h3>
         </div>
 
-        <div class="row">
+        {{-- <div class="row">
 
           <div class="col-lg-7 col-md-8 pt-lg-0">
             <img style="width: 750px; height:390px" src="{{ asset('assets/frontend/picture/1.jpg') }}" alt="">
@@ -164,12 +213,34 @@
                     tank missile & Mortar.
                 </p>
             </div>
-        </div>
+        </div> --}}
 
-        <hr class="mt-5">
+         <div class="container" data-aos="fade-up">
+          <div class="col-lg-6">
+           <img style="width: 1320px; height:700px" src="{{ asset('assets/frontend/picture/1.jpg') }}" alt="">
+                <p class="carousel-caption" id="caption2">
+                    We offer military grade
+                    hand guns, Assault rifles,
+                    Sniper rifles, Guided anti
+                    tank missile & Mortar. </p>
+             </div>
+          </div>
 
 
-         <div class="row content  mt-5" data-aos="fade-up">
+
+           <div class="container" data-aos="fade-up">
+          <div class="col-lg-6">
+           <img style="width: 1320px; height:800px" class="mt-5" src="{{ asset('assets/frontend/picture/2.jpg') }}" alt="">
+                <p class="carousel-caption" id="caption3">
+                    We serve top quality live
+                    ammunition. The list
+                    consist of .22LR, 9 mm,
+                    .45 Acp, 7.62x39/51 mm,
+                    Mortar shell. </p>
+             </div>
+          </div>
+
+         {{-- <div class="row content  mt-5" data-aos="fade-up">
           <div class="col-lg-5">
             <p>
                     We serve top quality live
@@ -184,10 +255,22 @@
                  <img style="width: 750px; height:390px" src="{{ asset('assets/frontend/picture/2.jpg') }}" alt="">
             </p>
           </div>
-        </div>
+        </div> --}}
 
-<hr class="mt-5">
-        <div class="row mt-5">
+
+
+            <div class="container" data-aos="fade-up">
+          <div class="col-lg-6">
+           <img style="width: 1320px; height:800px" class="mt-5" src="{{ asset('assets/frontend/picture/24.png') }}" alt="">
+                <p class="carousel-caption" id="caption3">
+                    We provide support for
+                    spare parts of AW
+                    119/139, Bell 206/212,
+                    MI17 Helicopter & C130
+                    J/B Hercules aircraft. </p>
+             </div>
+          </div>
+        {{-- <div class="row mt-5">
 
             <div class="col-lg-7 col-md-7 mt-4">
                 <img style="width: 750px; height:390px" src="{{ asset('assets/frontend/picture/24.png') }}" alt="">
@@ -202,7 +285,7 @@
                         J/B Hercules aircraft.
                 </p>
             </div>
-        </div>
+        </div> --}}
 
 
       </div>
@@ -210,10 +293,24 @@
     </section><!-- End Services Section -->
 
     <!-- ======= project_program Section ======= -->
+
     <section id="project_program" class="portfolio">
       <div class="container">
 
-        <div class="section-title" data-aos="zoom-out">
+        <div class="inline-block">
+
+             <div style="color:#ed7d31;" class="all__font__change text-center">
+                <marquee behavior="scroll" direction="left">
+                    “All’s fair in love and war” - F.E. Smedley
+                    <span style="margin-left:1in;"></span>
+                     {{-- “It’s an unfortunate fact that we can secure peace only by preparing for war.”  - John F. Kennedy
+                      <!--<span style="margin-left:1in;"></span> -->.....
+                      “We make war that we may live in peace” - Aristotle --}}
+                </marquee>
+            </div>
+         </div>
+
+        <div class="section-title mt-5" data-aos="zoom-out">
           <h2> Programs & Projects</h2>
           <p>Programs & Projects</p>
         </div>
@@ -268,18 +365,111 @@
 
              <div style="color:#ed7d31;" class="all__font__change mt-4 text-center">
                 <marquee behavior="scroll" direction="left">
-                    “All’s fair in love and war” - F.E. Smedley
+                    {{-- “All’s fair in love and war” - F.E. Smedley --}}
                     <span style="margin-left:1in;"></span>
                      “It’s an unfortunate fact that we can secure peace only by preparing for war.”  - John F. Kennedy
-                      <!--<span style="margin-left:1in;"></span> -->.....
-                      “We make war that we may live in peace” - Aristotle
+                      <!--<span style="margin-left:1in;"></span> -->
+                      {{-- “We make war that we may live in peace” - Aristotle --}}
                 </marquee>
             </div>
          </div>
       </div>
     </section><!-- End Portfolio Section -->
 
-    <section>
+
+    <section id="project_program" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Our Valued</h2>
+          <p>Our Worldwide Valued Principles</p>
+        </div>
+        <div class="container">
+
+          <div class="row" data-aos="zoom-out">
+            <div class="col-lg-12 text-center text-lg-start">
+
+              <p class="all__font__change">
+                  <b style="color: #ed7d31" >P.R. International</b> currently associated with principles from USA, Turkey and UAE. Our valued principles are
+                  participating tender and direct purchase opportunities of DGDP in a regular basis and they have very high
+                  contract wining record. We believe this is only possible through our close communication, in depth market
+                  analysis and competitive pricing.
+              </p>
+            </div>
+               <div style="text-align: center">
+                  <img src="{{ asset('assets/frontend/images/world_wide_value.png') }}" alt="">
+              </div>
+          </div>
+
+          <div class="inline-block">
+
+             <div style="color:#ed7d31;" class="all__font__change text-center mt-5">
+                <marquee behavior="scroll" direction="left">
+                    {{-- “All’s fair in love and war” - F.E. Smedley
+                    <span style="margin-left:1in;"></span>
+                     “It’s an unfortunate fact that we can secure peace only by preparing for war.”  - John F. Kennedy --}}
+                      <!--<span style="margin-left:1in;"></span> -->
+                      “We make war that we may live in peace” - Aristotle
+                </marquee>
+            </div>
+         </div>
+
+          <hr class="mt-5 mb-5">
+          <div class="row mt-8">
+            <div class="col-lg-4 col-md-4">
+                <div class="section-title" data-aos="zoom-out">
+
+
+          <h2>The Secret</h2>
+          <p>The Secret of Our Success!</p>
+        </div>
+                  {{-- <h4 style="color: chocolate" class="all__font__change"> The Secret of Our
+                      Success! </h4>
+                      <p style="color: black" class="all__font__change"> --}}
+                          Our principle companies
+                          have a qualified technical
+                          team who deals installation
+                          works, after commissioning
+                          services and maintenance
+                          during warranty and
+                          post-warranty period of the
+                          contracts. The technical
+                          team consist of well trained
+                          and experienced people.
+                      </p>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                  <img style="height: 450px" src="{{ asset('assets/frontend/images/success_img.png') }}" alt="">
+
+              </div>
+              <div class="col-lg-4 col-md-4">
+                  <div class="row">
+                      <img style="width:120px;height:100px" src="{{ asset('assets/frontend/images/success_icon_1.png') }}" alt="">
+                          <p style="color: black" class="all__font__change">
+                              Quality is pride of workmanship.
+                          </p>
+                      </div>
+                      <div class="row">
+                          <img style="width:120px;height:100px" src="{{ asset('assets/frontend/images/success_icon_2.png') }}" alt="">
+                          <p style="color: black" class="all__font__change">
+                              The service should not be
+                              the best, it should be
+                              legendary.
+                          </p>
+                      </div>
+                      <div class="row">
+                          <img style="width:120px;height:100px" src="{{ asset('assets/frontend/images/success_icon_3.png') }}" alt="">
+                          <p style="color: black" class="all__font__change">
+                              We made our passion our
+                              profession.
+                          </p>
+                      </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+    {{-- <section>
         <div class="container">
 
           <div class="row" data-aos="zoom-out">
@@ -343,13 +533,28 @@
               </div>
           </div>
         </div>
-      </section>
+      </section> --}}
 
     <!-- ======= Achievements Section ======= -->
+
+
     <section id="what_we_do" class="faq">
       <div class="container">
 
-        <div class="section-title" data-aos="zoom-out">
+        <div class="inline-block">
+
+             <div style="color:#ed7d31;" class="all__font__change text-center mt-5">
+                <marquee behavior="scroll" direction="left">
+                    “All’s fair in love and war” - F.E. Smedley
+                    <span style="margin-left:1in;"></span>
+                     “It’s an unfortunate fact that we can secure peace only by preparing for war.”  - John F. Kennedy
+                      <!--<span style="margin-left:1in;"></span> -->.....
+                      “We make war that we may live in peace” - Aristotle
+                </marquee>
+            </div>
+         </div>
+
+        <div class="section-title mt-5" data-aos="zoom-out">
           <h2>Achievements</h2>
           <p>What We Do ?</p>
         </div>

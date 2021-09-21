@@ -122,7 +122,20 @@
 <section id="testimonials" class="testimonials">
     <div class="container">
 
-      <div class="section-title" data-aos="zoom-out">
+        <div class="inline-block">
+
+             <div style="color:#ed7d31;" class="all__font__change text-center">
+                <marquee behavior="scroll" direction="left">
+                    “All’s fair in love and war” - F.E. Smedley
+                    <span style="margin-left:1in;"></span>
+                     “It’s an unfortunate fact that we can secure peace only by preparing for war.”  - John F. Kennedy
+                      <!--<span style="margin-left:1in;"></span> -->.....
+                      “We make war that we may live in peace” - Aristotle
+                </marquee>
+            </div>
+         </div>
+
+      <div class="section-title mt-5" data-aos="zoom-out">
         <h2>TEAM</h2>
         <p>OUR HARDWORKING TEAM</p>
       </div>
